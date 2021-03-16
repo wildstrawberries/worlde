@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	   <title>World</title>
+		 <style>
+			.container2 {
+				margin-left:15%;
+				margin-right:15%;
+				margin-bottom:2%;
+				margin-top:2%;
+			}
+			strong, a {
+					color: #1155cc;
+					text-decoration: none;
+			}
+			img {
+				display: block;
+				max-width: 100%;
+				margin: auto;
+			}
+			p, li {
+					color: #666666;
+					font-size: 13pt;
+					font-family: "Droid Serif"
+			}
+			h2 {
+				color: #1155cc;
+				font-size: 16pt;
+			}
+			h3 {
+				color: #1155cc;
+				font-size: 14pt;
+			}
+			h4 {
+				color: #b45f06;
+				font-size: 12pt;
+				text-align:center;
+			}
+			pre {
+				background:#eeeeee;
+				padding: 0pt;
+				white-space: pre-line;
+			}
+		</style>
+  </head>
+
+	<body class="bg-light">
+
+		<nav class="navbar nav-fill navbar-light bg-white" >
+			<a class="navbar-brand" href="./index.html">Home</a>
+			<a class="navbar-brand" href="./Adventure.html" >Launch Player</a>
+			<a class="navbar-brand" href="#" >Documentation</a>
+			<a class="navbar-brand" href="./index.html#contact" >Contact</a>
+		</nav>
+
+		<div class="py-3 text-center">
+			<img class="d-block mx-auto mb-4" src="./images/globeLG.png" alt="">
+			<h1 style="color: #1155cc;">Ready?</h1>
+			<p class="lead">Let your imagination wander ...</p>
+		</div>
+
+		<div class="container2" >
+
+
+			<h3 id="the-world-interface">The World Interface</h3>
+			<p>World is an interactive web/browser based text adventure game platform.  You can play, build, or modify Worlds of any size.  You can combine Worlds together.</p>
+			<p>Players interact with World through simple imperative <a href="#user-input">commands</a> that start with a verb: <em>take the golden sword</em>, <em>unlock the front door with the rusty key</em>, <em>go garden</em>, etc.</p>
+			<p>To play a game, load a World file, a simple single JSON file that contains all the data that drives a game.  You can load multiple World files and combine them!</p>
+			<p>Editor: the World is a simple one page javascript driven web application. It has both a Play View and an Editor View.  In Editor View, you can easily modify or create new Entities or entire Worlds with simple logic statements and a lot of imagination!</p>
+			<p>At any time you can save the current World, which also saves the current state of the game.</p>
+			<h3 id="why-another-text-adventure-platform">Why Another Text Adventure Platform?</h3>
+			<p>World is ...</p>
+			<ul>
+			<li>
+			<p>Simple: a single object model, a single js executable, a single json data file.</p>
+			</li>
+			<li>
+			<p>Flexible: fully configurable input and output text, can even be translated into other languages.</p>
+			</li>
+			<li>
+			<p>Extensible: Worlds can be built in modules and combined with each other. World data can be consumed by other applications via a simple JSON file format.</p>
+			</li>
+			<li>
+			<p>Powerful: create simple Worlds in minutes, complex Worlds in hours, and an epic Zork sized World in days.</p>
+			</li>
+			<li>
+			<p>Free and Open Source: for everyone who loves text adventure games, logic and problem solving, and telling stories.</p>
+			</li>
+			</ul>
+			<h3 id="get-started">Get Started</h3>
+			<p>Select from the Worlds on the home page.  Play, download, use .wld files as a template to create your own World.</p>
+			<p>Use the World Editor to easily modify and create new Entities.</p>
+			<p>Let us know your progress and get in touch!  Post your Worlds for others to experience!  Send us your ideas or your best work!</p>
+			<h2 id="building-a-world">Building a World</h2>
+			<p>Your entire World is modeled through a single object: an <strong>Entity</strong>. Everything in your World, a person, place, or thing, is simply an Entity.</p>
+			<p>Entities have Properties and Behaviors. They are in a certain <em>State</em> and have a set of <em>Behaviors</em> that respond to your commands and to other Entities.</p>
+			<p><img src="file:////Users/dirk/AdventureGame/images/entitySimple.png" alt=""></p>
+			<p>Entities are connected to each other in Parent and Child relationships. Entities in your <a href="#your-space">Space</a> will react to your commands.</p>
+			<p><img src="file:////Users/dirk/AdventureGame/images/entityConnect.png" alt=""></p>
+			<h2 id="the-entity-editor">The Entity Editor</h2>
+			<p>An Entity (which is any Person, Place, or Thing) has: Basic Information, States, and Behaviors.  <em>States</em> describe what the the Entity is now.  <em>Behaviors</em> are a series of <em>Conditions</em> and <em>Actions</em> (IF and THEN statements) that react to User Input and other Entities.</p>
+			<p><img src="file:////Users/dirk/AdventureGame/images/entityComplete.png" alt=""></p>
+			<p>Entities are built and edited in the the Entity Editor. If you open a World in edit view, you can toggle between Edit View and Play View at any time.</p>
+			<p><img src="file:////Users/dirk/AdventureGame/images/editorBlank.png" alt=""></p>
+			<p>Don't want to read any more documentation? Then just <a href="#get-started">get started!</a></p>
+			<h2 id="basic-information">Basic Information</h2>
+			<p>An Entity must have a <strong>Name</strong>. In most cases, an Entity has a <strong>Parent</strong> (it <em>belongs</em> to something, such as Object belongs to a Room, your possessions belong to you, etc.).  An Entity must be assigned an inital <strong>State</strong>, 0 is the default. <strong>Count</strong> is optional, and has many uses, and defaults to 0.  Finally, a set of set <strong>Properties</strong> can be set to change the Default Behavior of the Entity.</p>
+			<p><img src="file:////Users/dirk/AdventureGame/images/entityBlank.png" alt=""></p>
+			<p><strong>Name</strong>. Must be unique, short (1-2 words recommended, and at least 2 chars), and ideally, lowercase for consistency. Examples: <em>silver sword, cluster of apples, wicker basket, house, rabid dog</em>, etc.  The Entity Name is how you will reference the entity from other entities.</p>
+			<p><strong>Parent</strong>. Ultimately, every entity needs to belong somewhere (or to someone).  Objects around you, including you as a player, are owned by a Room.  A possession of yours is owned by you.  As you move from Room to Room, you change your <em>Parent</em> to the new Room.  A Room can be unassigned or point to <strong>world</strong> as its Parent.  Things, Rooms, World, and <strong>me</strong> are all Entities. A parent relationship is not needed if the Entity is a Room or is not in play.</p>
+			<p><strong>State</strong>. A State number is required. A State is used to describe the object as it is in the current moment. States are tracked as numbers starting at 0.</p>
+			<p><strong>Count</strong>. Count is a number that can be used for multiple purposes: to track internal state, strength, achievement or merit, or the quantity of an Entity. Integers are recommended, but decimals supported. A Players Count are displayed in the default Player View as <em>Points</em>.</p>
+			<p><strong>Properties</strong>. These are optional non-changing attributes that define the Default Behavior of the Entity:</p>
+			<pre><code>container
+			size
+			notake
+			noput
+			strength
+			quantity
+			</code></pre>
+			<h4 id="container">container</h4>
+			<p>Include the container property on Objects that can hold other Entities (<em>basket, box, barrel, phone booth</em>, etc.)  This allows <em>put X into Y</em> and <em>take X from Y</em> Default Actions.  Otherwise you will get a <em>you can't do that</em> error.</p>
+			<p>Other Entities including 'me' and any Entity that can be your Parent (eg. a Room) are containers by default and don't need this specified.</p>
+			<p>To specify a limit on the number of objects that can be contained, follow container with a number: <em>container5, container20,</em> etc.  Put the <em>container</em> property on the 'me' Entity to limit how much your character can carry.</p>
+			<h4 id="size">size</h4>
+			<p>By default, all Entities are size 1. However, to limit a container to fewer large objects, assign a size with a number to larger Entities: <em>size2, size15,</em> etc.</p>
+			<p>Sizes will be added up to not exceed the <em>container</em> limit.  Example: if a <em>basket</em> Entity is assigned <em>container10</em>.  It will fit 5 objects of default size1, 1 object of size4, but will no longer fit an additional Entity of size2.</p>
+			<p>Containers themselves must be given a fixed size. They will <em>keep this size regardless if they are empty or full</em>.  A <em>backpack</em> Entity can be a <em>container10,size5</em>, meaning it can hold 10 size points but only weighs you by size5. This makes sense in that a container can <em>help</em> you carry more!</p>
+			<h4 id="notake">notake</h4>
+			<p>Some objects are not meant to be taken by default. This includes most <em>Beings</em> such as characters in your story, or massive objects such as <em>telephone booth,  metal vat, car</em>, etc.</p>
+			<h4 id="noput">noput</h4>
+			<p>More unusual, but interesting, once you either have or <em>take</em> an object, this will not let you put it down by default. This Entity could be a <em>guiding spirit, voice in your head, faithful dog, memory enhancement chip,</em> etc.</p>
+			<h4 id="strength">strength</h4>
+			<p><em>strength</em> only affects the description output. Use this property if you are using <em>Points</em> to track a Being's strength and you want the user to know how many strength points they have, typically used for battle situations.  An entity's <em>Points</em> will be shown as: <em>the {swamp monster} has a stregth of 8</em>.</p>
+			<h4 id="quantity">quantity</h4>
+			<p>As with strength, <em>quantity</em> only affects the description output. Use this property if you are using <em>Points</em> to track the Quanity of an Entity. Use this for such things as <em>matches, coins, poison darts,</em> etc. You can even use decimals.  <em>You have a bag full of donuts. You have 5 of these.</em> or <em>You have Xuru currency. You have 7.25 of these.</em></p>
+			<h2 id="state-description">State Description</h2>
+			<p><img src="file:////Users/dirk/AdventureGame/images/stateBlank.png" alt=""></p>
+			<p>The State Description describes the Entity to the Player. There is one description for every possible State. At a minimum, a State 0 Description is required. Use full sentences that end in a period.  In Abridged mode, only the first sentence will be displayed.</p>
+			<p>For a Place, answer the question: Where are you?</p>
+			<pre><code>You are under a ladder.., Around you is water..
+			</code></pre>
+			<p>For a Thing or Being, start with a noun phrase. Answer the question: Here is …</p>
+			<pre><code>A large barrel full of apples. An old key. A frightening swamp monster.
+			</code></pre>
+			<p>The State of the Entity determines which State Description to show the Player.  The State is what an Entity ‘is’ at any given time.  A ‘glass ball’ may begin first in State 0: ‘A clear blue ball’, after certain actions, it turns into State 1: ‘A glowing sphere’, and finally, State 2: ‘A cracked glass ball’.</p>
+			<h3 id="entity-examples">Entity Examples</h3>
+			<h4 id="person">Person</h4>
+			<p><img src="file:////Users/dirk/AdventureGame/images/entitySamp2.png" alt=""></p>
+			<h4 id="place">Place</h4>
+			<p><img src="file:////Users/dirk/AdventureGame/images/entitySamp4.png" alt=""></p>
+			<h4 id="thing">Thing</h4>
+			<p><img src="file:////Users/dirk/AdventureGame/images/entitySamp3.png" alt=""></p>
+			<h2 id="behaviors">Behaviors</h2>
+			<p>A Behavior consists of: Conditions and Actions.</p>
+			<p><img src="file:////Users/dirk/AdventureGame/images/behaveSimple.png" alt=""></p>
+			<p>Conditions are the ‘IF statement’ that check the User Input and (optionally) the Properties of other Entities. Actions are the ‘THEN statement’ that act on other Entities, changing their State, Parent, or Count.</p>
+			<p><img src="file:////Users/dirk/AdventureGame/images/behaveBlank.png" alt=""></p>
+			<h3 id="user-input-conditions-verb-noun-prep-object">User Input Conditions: Verb, Noun, Prep, Object</h3>
+			<p>First and foremost, Entities react to a user’s input. A condition first tries to match the users:  verb, noun (eg. object), and optionally: preposition, and indirect object.</p>
+			<p>You can put in a ‘bag of words’ to match several possible inputs. The following would match climb tree, climb fort, go fort, go tree, climb tree fort, etc. but in all cases would require ‘rope’ as your indirect object, eg. climb tree using rope, climb fort with rope, etc.</p>
+			<p>You can even leave the verb and/or noun empty as a ‘wildcard’. But beware, this means this Condition is likely to fire more frequently or at every turn.</p>
+			<h3 id="condition-statements--world-meta-commands">Condition Statements : World Meta Commands</h3>
+			<p>Now comes the fun part!  After the user input is matched, further optional Conditions are checked. World Meta Commands are simple logic statements, much like a simple programming language, which check the State, Parent, and Count of other Entities.</p>
+			<p>Don’t be afraid, this is a very easy language to learn. Condition Statements are a series of ANDed logic statements in this form:</p>
+			<pre><code>{Entity Name} : {S|P|C}  {=|!|&lt;|&gt;}  {some value} , ...
+			</code></pre>
+			<p>S = State. P = Parent. C = Count.</p>
+			<h3 id="sample-conditions">Sample Conditions</h3>
+			<pre><code>pirate:S=1
+			</code></pre>
+			<p>Is the Pirate in State 1?</p>
+			<pre><code>evil wizard:P=tower
+			</code></pre>
+			<p>Is the evil wizard in the tower, eg. is the Parent of the evil wizard the tower?</p>
+			<pre><code>sea monster:C&lt;10,sea monster:P=pond
+			</code></pre>
+			<p>Does the sea monster have less than 10 points AND is it in the pond?)</p>
+			<pre><code>gold cup:S!2,sword:P=me,me:C&gt;20
+			</code></pre>
+			<p>Is the gold cup not in State 2 AND do I have the sword AND do I have more than 20 Points?</p>
+			<pre><code>key:O!me,vulture:S&gt;2,vulture:P=bedroom
+			</code></pre>
+			<p>Do I not have the key AND the vulture is in some State above 2 AND the vulture is in the bedroom?</p>
+			<h3 id="reserved-entity-me">Reserved Entity: me</h3>
+			<p>The player is <em>always referred to as ‘me’</em> in Condition and Action statements.  Eg:</p>
+			<pre><code>me:P=room5,me:C+7,sword:P=me, ..
+			</code></pre>
+			<p>For advanced players: World actually allows the Player to play as any Entity.  By default, the Player plays as the ‘me’ Entity.  Regardless of which Entity you are playing, Conditions and Actions will always recognize ‘me’ as the current Player.  Always use ‘me’ in your Conditions and Actions when referring to ‘the Player’.</p>
+			<h3 id="random-condition-command-r">Random Condition Command: R=</h3>
+			<p>You can make a Condition random by adding R={% probability, 0-99} anywhere on the Condition statement.</p>
+			<pre><code>me:P=haunted house,R=40
+			</code></pre>
+			<p>If you are in the haunted house, execute this action 40% of the time ...</p>
+			<h3 id="action-statements">Action Statements</h3>
+			<p>Once both the User Input Condition and Condition Statements are matched, it’s time for something to happen. Everything that ‘happens’ in the World is through one or more Entities changing: State, Parent, or Count. Each Action is followed by an optional message. Simple!</p>
+			<p>And even more good news: Actions use almost the exact same syntax as Conditions!</p>
+			<pre><code>{Entity Name} : {S|P|C}  {=|+|-}  {some value} , ...
+			</code></pre>
+			<p>S = State. P = Parent. C = Count.</p>
+			<h3 id="sample-actions">Sample Actions</h3>
+			<pre><code>me:P=house
+			</code></pre>
+			<p>Changes my Parent, eg. my location, to House. You create this type of action for every ‘go’ command.</p>
+			<pre><code>gold nugget:P=thief,me:C-8,cave:S=3
+			</code></pre>
+			<p>Moves the gold nugget to the thief, deducts 8 points from me, sets the cave to State 3.</p>
+			<pre><code>jewel:P=me,me:C+25,me:P=magic carpet
+			</code></pre>
+			<p>Moves the jewel to me, awards me 25 points, moves me to the magic carpet.</p>
+			<h3 id="only-one-action-triggered-per-entity-per-turn">Only One Action Triggered Per Entity Per Turn</h3>
+			<p>Once an action executes (the User Input Conditions and Condition statements are met), the World will move on to the next Entity and check its actions, it will <em>not</em> continue to process conditions/actions on the same Entity.  This avoids many unexpected recursive and annoying behavior (trust us on this one!)</p>
+			<p>Also important: <em>once an Action fires, the World will no longer process actions from your Room or Default Actions</em>. This is so that Conditions from Entities in your World can override standard behavior.  This way, you can prevent a Player from ‘going’, ‘taking’, ‘putting’, etc. in the default way.</p>
+			<h3 id="special-action-commands-continue-autorun-parent-child">Special Action Commands: continue, autorun, PARENT!, CHILD!</h3>
+			<p><strong>continue</strong>. Use <em>continue</em> to execute Room Actions and Default Actions in addition to this Action.  Use ‘continue’ if you want to give the user a message (something humorous, perhaps) and still want all further Behaviors triggered as well.</p>
+			<p>Example: everytime you ‘go’ somewhere, you want to print a message ‘your feet ache’.  Normally, further ‘go’ Conditions will be ignored, but with ‘continue’, you ensure that Room and Default Conditions are executed.</p>
+			<pre><code>me:C-5,continue
+			</code></pre>
+			<p>Takes away 5 points from me, (gives the user a message), AND process defaults</p>
+			<p><strong>autorun</strong>. If Conditions are met, an <em>autorun</em> Action will force a next move in 5 seconds.  Exactly the same as if you hit ‘enter’. Use with a wildcard event (eg. no verb or noun) that will execute no matter what (eg. a monster making an attack, a continual change in the Room, etc.)</p>
+			<pre><code>me:P=vampire room,autorun
+			</code></pre>
+			<p>As long as you are in the vampire room, the game will force a move each 5 seconds.</p>
+			<p><strong>PARENT!</strong> and <strong>CHILD!</strong> are some of the most advanced and powerful concepts in World.  You will want to first get experience in the basics first.  However, when ready, these functions will take your World to a new dimension.</p>
+			<p><strong>PARENT!</strong>. In certain advanced scenarios, you will want to set the Parent of an Entity to the <em>Parent</em> of another Entity.  For example, if the Player is being transported in a container (eg. a magic carpet, a car, a phone booth ..) and wants to 'get out' of the container at anytime, the Player needs to parent to the same Parent as their container.  Here you should use the special command <strong>me:P=PARENT!{my container}</strong>.  In other words: move an Entity (usually 'me') to the same Room as my Container.  If I am in <em>car</em> (me:P=car), and my car happens to be in <em>garage</em> (car:P=garage), by getting out of the car, I want to be moved to the Room of my car (me:P=Parent!car) which moves 'me' to <em>garage</em>.  You can also use PARENT! to make any other Entity magically appear in the same room as you, regardless of where you are: <em>genie:P=PARENT!me</em>.</p>
+			<p><strong>CHILD!</strong>. You can also assign an Entity to the <em>child</em> of a parent Entity.  Since an Entity can have many children, this assignment is <em>random</em>.  For example, you can have a troll randomly appear in one of many rooms in a cave.  You must first create a special parent Entity, in this case, for all the rooms in the cave (eg. <em>cave rooms</em>). Then, through an action you assign the troll randomly to one of the Rooms: <em>troll:P=CHILD!cave rooms</em>. One of the Rooms that look up to <em>cave rooms</em> will be choosen at random, creating a sense of agency and motion. By repeatidly calling this same action, the troll will move around the cave rooms at random. You can also move your character at random as if through a portal.  Assign certain 'portal' locations to a common Parent <em>portal rooms</em> and then, move your character at random to one of these locations: <em>me:P=CHILD!portal rooms</em>.</p>
+			<h3 id="behavior-examples">Behavior Examples</h3>
+			<p><img src="file:////Users/dirk/AdventureGame/images/behaveSamp1.png" alt=""></p>
+			<p>IF the Player enters <em>open door with|using key</em> AND house is still in State 0 AND I have the key THEN change the house Entity to State 1 and show a message.</p>
+			<p><img src="file:////Users/dirk/AdventureGame/images/behaveSamp2.png" alt=""></p>
+			<p>Battle behavior.  IF the Player enters <em>hit|kill|strike the rock monster</em> AND the monster is either State 0 or 1 THEN advance the monster up 1 State and take away 3 Points from me and show a message.</p>
+			<h2 id="default-behaviors">Default Behaviors</h2>
+			<p>World will interpret the following commands automatically if no other Entity in your Space gets to it first</p>
+			<pre><code>Take
+			Put
+			Look
+			Inventory
+			Brief
+			Verbose
+			</code></pre>
+			<p>This is not a long list, leaving most of the game to be highly customizable; these commands would certainly be a pain to code, so they are handled automatically.</p>
+			<p>However, if you don’t want the user to use these commands, simply put a Behavior in the Room or Object in the Player’s Space that reacts to ‘put’ or ‘get’ and the default behavior will not trigger.
+			Important Note: Entities in your Space override default Behavior</p>
+			<h2 id="user-input">User Input</h2>
+			<p>World accepts simple imperative phrases starting with a verb. To minimize unexpected behavior, World does not process compound sentences and will simply stop at the first <em>and</em>.  Accepted phrase types include:</p>
+			<p>{verb} {noun} {prep} {obj}</p>
+			<pre><code>kill the green dragon with the golden sword
+			</code></pre>
+			<p>{verb} {prep} {prep} {noun}</p>
+			<pre><code>go down through the tunnel, go up into the escape hatch, go down around bend
+			</code></pre>
+			<p>{verb} {prep} {noun}</p>
+			<pre><code>throw around the ball, go through the waterfall, lean against the wall
+			</code></pre>
+			<p>{verb} {noun}</p>
+			<pre><code>get the golden goose
+			</code></pre>
+			<p>{verb} {prep}</p>
+			<pre><code>get out, go down, crawl through
+			</code></pre>
+			<p>{verb} {noun} {prep}</p>
+			<pre><code>place bar sideways, follow the staircase up, lay carpet down, throw the rope across
+			</code></pre>
+			<p>{verb} {obj} {noun}</p>
+			<pre><code>give the wizard the pearl, feed the pig an oat, show the man a book
+			</code></pre>
+			<p>{verb}</p>
+			<pre><code>inventory, look, run, yell
+			</code></pre>
+			<h3 id="word-length">Word Length</h3>
+			<p>World will process entered words at least 2 characters in length, it will not match single letters as words (these are too ambiguous).</p>
+			<h3 id="synonyms---high-frequency-verbs">Synonyms - High Frequency Verbs</h3>
+			<p>World will map a variety of common verbs to ‘high frequency’ verbs for you automatically.  If a user enters ‘get’ World will also understand this as ‘take’. Use these Verbs in your Condition Statements.</p>
+			<p>In your Conditions, you can add multiple word combinations (eg. bag of words) but you don’t need to put ‘get’, ‘gather’, etc. each time, just use ‘take’.  Here are the preprogrammed high frequency verb mappings:</p>
+			<pre><code>take &lt;- get, grab, gather, collect
+			put &lt;- drop, lower
+			look &lt;- see, examine, inspect
+			brief &lt;- abridge, abridged, short
+			verbose &lt;- long, wordy
+			go &lt;- walk, run, head
+			jump &lt;- leap
+			push &lt;- press, shove
+			close &lt;- shut
+			open &lt;- lift, raise
+			hit &lt;- punch, strike, slam, kick, stab, kill
+			break &lt;- smash, shatter, destroy
+			say &lt;- talk, speak, chat
+			ask &lt;- question, inquire
+			yell &lt;- scream, shout
+			</code></pre>
+			<p>Note: World will not map Nouns or Objects to other words, it will simply do a 2 character (or more) match against your word list.</p>
+			<h3 id="prepositions-and-direct-objects">Prepositions and Direct Objects</h3>
+			<p>If you specify a preposition and/or indirect object in the Behavior User Input fields, then the preposition and indirect object will be required by the player.  The following Condition:</p>
+			<p>will not pass if the user types:</p>
+			<pre><code>open mailbox
+			</code></pre>
+			<p>The Condition will pass if the user types in all four words, such as any of the following:</p>
+			<pre><code>open mailbox with can
+			open mailbox with opener
+			open mailbox using can opener
+			open mailbox with ca
+			open mailbox using op
+			...
+			</code></pre>
+			<h3 id="your-space">Your Space</h3>
+			<p>On any given turn, the Entities that matter are those in your Space.</p>
+			<p><img src="file:////Users/dirk/AdventureGame/images/mySpace.png" alt=""></p>
+			<p>The red Entities make up your Space. These are the Entities that are in a Parent/Child relationship with you.  These Entities listen to and respond to your Actions. There may be hundreds of other rooms and objects in the World, however, only the Entities in your Space react to you in a given turn.</p>
+			<p>Entities respond to User Commands in the following order:</p>
+			<pre><code>1. Me
+			2. Entities in your Room (Things in Room)
+			3. Entities in your possession (My Things)
+			4. Your Room
+			5. The World (above your Room)
+			6. and finally, Default Actions
+			</code></pre>
+			<p>World performs default actions for the following commands: take, put, look, inventory, brief, verbose.</p>
+			<h2 id="tips">TIPS</h2>
+			<h3 id="tip--put-most-complex--specific-behavior-logic-first-general-behavior-later">TIP : Put most complex &amp; specific Behavior logic first, general Behavior later</h3>
+			<p>Even though you might only get the golden cup after many puzzles, put the ‘winning’ Behavior first, since it is the most specific (give cup ownership to me, IF cup State = 5 AND Room State = 3 AND My Points &gt; 30).</p>
+			<p>Put more general Behavior (eg. ‘Try again’, ‘You swing and miss!’) toward the end of your logic.</p>
+			<h3 id="tip--creating-beings">TIP : Creating ‘Beings’</h3>
+			<p>Beings are the most complex Entities. They are living (?) things that can move, react, talk, attack based on your actions.  In fact, any Entity can do these things, for a very creative effect!</p>
+			<p>You should add the <em>notake</em> property to most Beings (unless it is a butterfly or hamster that you <em>can</em> take).  To prevent any further actions taken on a Being, simply put in a wildcard Behavior as your last Behavior.</p>
+			<h3 id="tip--describe-an-entity-from-all-directions">TIP : Describe an Entity ‘from all directions’</h3>
+			<p>Often we think of our story in linear form, for example, ‘you are in the attic, you are tired from walking all those stairs up!’.  However, what if you can also enter the attic from a hole in the roof?  Make sure your descriptions work from all points of view and points of entry.</p>
+			<h3 id="tip--turn-on-your-browers-javascript-console-to-see-debugging-information">TIP : Turn on your brower's Javascript Console to see debugging information</h3>
+			<p>Useful debugging information is generated during Play Mode, including parsed input, Entities processed, Actions triggered. To enable:
+			Safari: Develop &gt; Show JavaScript Console</p>
+			<h2 id="advanced-configuration">Advanced Configuration</h2>
+			<p>Additional game configuration can be done in the AdventureConfig.js file.  Here you can change:</p>
+			<pre><code>High Use Verbs and mappings
+			Prepositions
+			Default behavior text (“You don’t seem to have this here”, ..)
+			Help text
+			</code></pre>
+			<h2 id="about-me">About Me</h2>
+			<p>Dirk Koechner is an avid 'single page apps written by one person without a framework' advocate and enthusiast.  He was enamored with text adventure games, such as Zork, since youth and has always wanted to write a clear powerful tool to create text based interactive games. Other projects include writing a music composition software.  He lives with his family near Munich, Germany.</p>
+
+
+		</div>
+	</body>
+</html>
