@@ -61,7 +61,7 @@
 		</nav>
 
 		<div class="py-3 text-center">
-			<img class="d-block mx-auto mb-4" src="./images/globeLG.png" alt="">
+			<img class="d-block mx-auto mb-4" src="images/globeLG.png" alt="">
 			<h1 style="color: #1155cc;">Ready?</h1>
 			<p class="lead">Let your imagination wander ...</p>
 		</div>
@@ -101,18 +101,18 @@
 			<h2 id="building-a-world">Building a World</h2>
 			<p>Your entire World is modeled through a single object: an <strong>Entity</strong>. Everything in your World, a person, place, or thing, is simply an Entity.</p>
 			<p>Entities have Properties and Behaviors. They are in a certain <em>State</em> and have a set of <em>Behaviors</em> that respond to your commands and to other Entities.</p>
-			<p><img src="file:////Users/dirk/AdventureGame/images/entitySimple.png" alt=""></p>
+			<p><img src="images/entitySimple.png" alt=""></p>
 			<p>Entities are connected to each other in Parent and Child relationships. Entities in your <a href="#your-space">Space</a> will react to your commands.</p>
-			<p><img src="file:////Users/dirk/AdventureGame/images/entityConnect.png" alt=""></p>
+			<p><img src="images/entityConnect.png" alt=""></p>
 			<h2 id="the-entity-editor">The Entity Editor</h2>
 			<p>An Entity (which is any Person, Place, or Thing) has: Basic Information, States, and Behaviors.  <em>States</em> describe what the the Entity is now.  <em>Behaviors</em> are a series of <em>Conditions</em> and <em>Actions</em> (IF and THEN statements) that react to User Input and other Entities.</p>
-			<p><img src="file:////Users/dirk/AdventureGame/images/entityComplete.png" alt=""></p>
+			<p><img src="images/entityComplete.png" alt=""></p>
 			<p>Entities are built and edited in the the Entity Editor. If you open a World in edit view, you can toggle between Edit View and Play View at any time.</p>
-			<p><img src="file:////Users/dirk/AdventureGame/images/editorBlank.png" alt=""></p>
+			<p><img src="images/editorBlank.png" alt=""></p>
 			<p>Don't want to read any more documentation? Then just <a href="#get-started">get started!</a></p>
 			<h2 id="basic-information">Basic Information</h2>
 			<p>An Entity must have a <strong>Name</strong>. In most cases, an Entity has a <strong>Parent</strong> (it <em>belongs</em> to something, such as Object belongs to a Room, your possessions belong to you, etc.).  An Entity must be assigned an inital <strong>State</strong>, 0 is the default. <strong>Count</strong> is optional, and has many uses, and defaults to 0.  Finally, a set of set <strong>Properties</strong> can be set to change the Default Behavior of the Entity.</p>
-			<p><img src="file:////Users/dirk/AdventureGame/images/entityBlank.png" alt=""></p>
+			<p><img src="images/entityBlank.png" alt=""></p>
 			<p><strong>Name</strong>. Must be unique, short (1-2 words recommended, and at least 2 chars), and ideally, lowercase for consistency. Examples: <em>silver sword, cluster of apples, wicker basket, house, rabid dog</em>, etc.  The Entity Name is how you will reference the entity from other entities.</p>
 			<p><strong>Parent</strong>. Ultimately, every entity needs to belong somewhere (or to someone).  Objects around you, including you as a player, are owned by a Room.  A possession of yours is owned by you.  As you move from Room to Room, you change your <em>Parent</em> to the new Room.  A Room can be unassigned or point to <strong>world</strong> as its Parent.  Things, Rooms, World, and <strong>me</strong> are all Entities. A parent relationship is not needed if the Entity is a Room or is not in play.</p>
 			<p><strong>State</strong>. A State number is required. A State is used to describe the object as it is in the current moment. States are tracked as numbers starting at 0.</p>
@@ -142,7 +142,7 @@
 			<h4 id="quantity">quantity</h4>
 			<p>As with strength, <em>quantity</em> only affects the description output. Use this property if you are using <em>Points</em> to track the Quanity of an Entity. Use this for such things as <em>matches, coins, poison darts,</em> etc. You can even use decimals.  <em>You have a bag full of donuts. You have 5 of these.</em> or <em>You have Xuru currency. You have 7.25 of these.</em></p>
 			<h2 id="state-description">State Description</h2>
-			<p><img src="file:////Users/dirk/AdventureGame/images/stateBlank.png" alt=""></p>
+			<p><img src="images/stateBlank.png" alt=""></p>
 			<p>The State Description describes the Entity to the Player. There is one description for every possible State. At a minimum, a State 0 Description is required. Use full sentences that end in a period.  In Abridged mode, only the first sentence will be displayed.</p>
 			<p>For a Place, answer the question: Where are you?</p>
 			<pre><code>You are under a ladder.., Around you is water..
@@ -153,16 +153,16 @@
 			<p>The State of the Entity determines which State Description to show the Player.  The State is what an Entity ‘is’ at any given time.  A ‘glass ball’ may begin first in State 0: ‘A clear blue ball’, after certain actions, it turns into State 1: ‘A glowing sphere’, and finally, State 2: ‘A cracked glass ball’.</p>
 			<h3 id="entity-examples">Entity Examples</h3>
 			<h4 id="person">Person</h4>
-			<p><img src="file:////Users/dirk/AdventureGame/images/entitySamp2.png" alt=""></p>
+			<p><img src="images/entitySamp2.png" alt=""></p>
 			<h4 id="place">Place</h4>
-			<p><img src="file:////Users/dirk/AdventureGame/images/entitySamp4.png" alt=""></p>
+			<p><img src="images/entitySamp4.png" alt=""></p>
 			<h4 id="thing">Thing</h4>
-			<p><img src="file:////Users/dirk/AdventureGame/images/entitySamp3.png" alt=""></p>
+			<p><img src="images/entitySamp3.png" alt=""></p>
 			<h2 id="behaviors">Behaviors</h2>
 			<p>A Behavior consists of: Conditions and Actions.</p>
-			<p><img src="file:////Users/dirk/AdventureGame/images/behaveSimple.png" alt=""></p>
+			<p><img src="images/behaveSimple.png" alt=""></p>
 			<p>Conditions are the ‘IF statement’ that check the User Input and (optionally) the Properties of other Entities. Actions are the ‘THEN statement’ that act on other Entities, changing their State, Parent, or Count.</p>
-			<p><img src="file:////Users/dirk/AdventureGame/images/behaveBlank.png" alt=""></p>
+			<p><img src="images/behaveBlank.png" alt=""></p>
 			<h3 id="user-input-conditions-verb-noun-prep-object">User Input Conditions: Verb, Noun, Prep, Object</h3>
 			<p>First and foremost, Entities react to a user’s input. A condition first tries to match the users:  verb, noun (eg. object), and optionally: preposition, and indirect object.</p>
 			<p>You can put in a ‘bag of words’ to match several possible inputs. The following would match climb tree, climb fort, go fort, go tree, climb tree fort, etc. but in all cases would require ‘rope’ as your indirect object, eg. climb tree using rope, climb fort with rope, etc.</p>
@@ -232,9 +232,9 @@
 			<p><strong>PARENT!</strong>. In certain advanced scenarios, you will want to set the Parent of an Entity to the <em>Parent</em> of another Entity.  For example, if the Player is being transported in a container (eg. a magic carpet, a car, a phone booth ..) and wants to 'get out' of the container at anytime, the Player needs to parent to the same Parent as their container.  Here you should use the special command <strong>me:P=PARENT!{my container}</strong>.  In other words: move an Entity (usually 'me') to the same Room as my Container.  If I am in <em>car</em> (me:P=car), and my car happens to be in <em>garage</em> (car:P=garage), by getting out of the car, I want to be moved to the Room of my car (me:P=Parent!car) which moves 'me' to <em>garage</em>.  You can also use PARENT! to make any other Entity magically appear in the same room as you, regardless of where you are: <em>genie:P=PARENT!me</em>.</p>
 			<p><strong>CHILD!</strong>. You can also assign an Entity to the <em>child</em> of a parent Entity.  Since an Entity can have many children, this assignment is <em>random</em>.  For example, you can have a troll randomly appear in one of many rooms in a cave.  You must first create a special parent Entity, in this case, for all the rooms in the cave (eg. <em>cave rooms</em>). Then, through an action you assign the troll randomly to one of the Rooms: <em>troll:P=CHILD!cave rooms</em>. One of the Rooms that look up to <em>cave rooms</em> will be choosen at random, creating a sense of agency and motion. By repeatidly calling this same action, the troll will move around the cave rooms at random. You can also move your character at random as if through a portal.  Assign certain 'portal' locations to a common Parent <em>portal rooms</em> and then, move your character at random to one of these locations: <em>me:P=CHILD!portal rooms</em>.</p>
 			<h3 id="behavior-examples">Behavior Examples</h3>
-			<p><img src="file:////Users/dirk/AdventureGame/images/behaveSamp1.png" alt=""></p>
+			<p><img src="images/behaveSamp1.png" alt=""></p>
 			<p>IF the Player enters <em>open door with|using key</em> AND house is still in State 0 AND I have the key THEN change the house Entity to State 1 and show a message.</p>
-			<p><img src="file:////Users/dirk/AdventureGame/images/behaveSamp2.png" alt=""></p>
+			<p><img src="images/behaveSamp2.png" alt=""></p>
 			<p>Battle behavior.  IF the Player enters <em>hit|kill|strike the rock monster</em> AND the monster is either State 0 or 1 THEN advance the monster up 1 State and take away 3 Points from me and show a message.</p>
 			<h2 id="default-behaviors">Default Behaviors</h2>
 			<p>World will interpret the following commands automatically if no other Entity in your Space gets to it first</p>
@@ -311,7 +311,7 @@
 			</code></pre>
 			<h3 id="your-space">Your Space</h3>
 			<p>On any given turn, the Entities that matter are those in your Space.</p>
-			<p><img src="file:////Users/dirk/AdventureGame/images/mySpace.png" alt=""></p>
+			<p><img src="images/mySpace.png" alt=""></p>
 			<p>The red Entities make up your Space. These are the Entities that are in a Parent/Child relationship with you.  These Entities listen to and respond to your Actions. There may be hundreds of other rooms and objects in the World, however, only the Entities in your Space react to you in a given turn.</p>
 			<p>Entities respond to User Commands in the following order:</p>
 			<pre><code>1. Me
