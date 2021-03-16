@@ -61,7 +61,7 @@
 		</nav>
 
 		<div class="py-3 text-center">
-			<img class="d-block mx-auto mb-4" src="images/globeLG.png" alt="">
+			<img class="d-block mx-auto mb-4" src="./images/globeLG.png" alt="">
 			<h1 style="color: #1155cc;">Ready?</h1>
 			<p class="lead">Let your imagination wander ...</p>
 		</div>
@@ -69,14 +69,17 @@
 		<div class="container2" >
 
 
-			<h3 id="the-world-interface">The World Interface</h3>
-			<p>World is an interactive web/browser based text adventure game platform.  You can play, build, or modify Worlds of any size.  You can combine Worlds together.</p>
-			<p>Players interact with World through simple imperative <a href="#user-input">commands</a> that start with a verb: <em>take the golden sword</em>, <em>unlock the front door with the rusty key</em>, <em>go garden</em>, etc.</p>
-			<p>To play a game, load a World file, a simple single JSON file that contains all the data that drives a game.  You can load multiple World files and combine them!</p>
-			<p>Editor: the World is a simple one page javascript driven web application. It has both a Play View and an Editor View.  In Editor View, you can easily modify or create new Entities or entire Worlds with simple logic statements and a lot of imagination!</p>
-			<p>At any time you can save the current World, which also saves the current state of the game.</p>
+			<h3 id="the-worlde">The Worlde</h3>
+			<p>Worlde is an interactive web/browser based text adventure game platform.  You can play, build, or modify Worldes of any size.  You can combine Worldes together.</p>
+			<p>Players interact with Worlde through simple imperative <a href="#user-input">commands</a> that start with a verb: <em>take the golden sword</em>, <em>unlock the front door with the rusty key</em>, <em>go garden</em>, etc.</p>
+			<p>To play a game, <img src="index.html" alt="load a Worlde file">.  Worldes are stored in single simple JSON file that contains all the data that drives a game.  You can load multiple Worlde files and combine them!</p>
+			<p>At any time you can save the current state of the Worlde.</p>
+			<h3 id="the-editor">The Editor</h3>
+			<p>In Worlde, you can toggle between Play View and Edit View in real time.  You can check the state and parent of any Entity as it is at that moment.  In Editor View, you can modify or create new Entities or entire Worldes with simple logic statements and a lot of imagination!</p>
+			<p>Search for Entities in the Entity search box. Modify attributes, states, and behaviors and remember to 'Save Entity'. Errors and warnings will be shown.  Entities must have a unique name.</p>
+			<p>At any time you can save the current Worlde.</p>
 			<h3 id="why-another-text-adventure-platform">Why Another Text Adventure Platform?</h3>
-			<p>World is ...</p>
+			<p>Worlde is ...</p>
 			<ul>
 			<li>
 			<p>Simple: a single object model, a single js executable, a single json data file.</p>
@@ -85,21 +88,29 @@
 			<p>Flexible: fully configurable input and output text, can even be translated into other languages.</p>
 			</li>
 			<li>
-			<p>Extensible: Worlds can be built in modules and combined with each other. World data can be consumed by other applications via a simple JSON file format.</p>
+			<p>Extensible: Worldes can be built in modules and combined with each other. Worlde data can be consumed by other applications via a simple JSON file format.</p>
 			</li>
 			<li>
-			<p>Powerful: create simple Worlds in minutes, complex Worlds in hours, and an epic Zork sized World in days.</p>
+			<p>Powerful: create simple Worldes in minutes, complex Worldes in hours, and an epic Zork sized Worlde in days.</p>
 			</li>
 			<li>
 			<p>Free and Open Source: for everyone who loves text adventure games, logic and problem solving, and telling stories.</p>
 			</li>
 			</ul>
 			<h3 id="get-started">Get Started</h3>
-			<p>Select from the Worlds on the home page.  Play, download, use .wld files as a template to create your own World.</p>
-			<p>Use the World Editor to easily modify and create new Entities.</p>
-			<p>Let us know your progress and get in touch!  Post your Worlds for others to experience!  Send us your ideas or your best work!</p>
-			<h2 id="building-a-world">Building a World</h2>
-			<p>Your entire World is modeled through a single object: an <strong>Entity</strong>. Everything in your World, a person, place, or thing, is simply an Entity.</p>
+			<ol>
+			<li>
+			<p>Select from the Worldes on the <img src="index.html" alt="home page">.  Play, download, use .wld files as a template to create your own Worlde.</p>
+			</li>
+			<li>
+			<p>Use the Worlde Editor to modify and create new Entities. You can test changes in real time.</p>
+			</li>
+			<li>
+			<p>Let us know your progress and get in touch!  Post your Worldes for others to experience!  Send us your ideas or your best work!</p>
+			</li>
+			</ol>
+			<h2 id="building-a-worlde">Building a Worlde</h2>
+			<p>Your entire Worlde is modeled through a single object: an <strong>Entity</strong>. Everything in your Worlde, a person, place, or thing, is simply an Entity.</p>
 			<p>Entities have Properties and Behaviors. They are in a certain <em>State</em> and have a set of <em>Behaviors</em> that respond to your commands and to other Entities.</p>
 			<p><img src="images/entitySimple.png" alt=""></p>
 			<p>Entities are connected to each other in Parent and Child relationships. Entities in your <a href="#your-space">Space</a> will react to your commands.</p>
@@ -107,19 +118,20 @@
 			<h2 id="the-entity-editor">The Entity Editor</h2>
 			<p>An Entity (which is any Person, Place, or Thing) has: Basic Information, States, and Behaviors.  <em>States</em> describe what the the Entity is now.  <em>Behaviors</em> are a series of <em>Conditions</em> and <em>Actions</em> (IF and THEN statements) that react to User Input and other Entities.</p>
 			<p><img src="images/entityComplete.png" alt=""></p>
-			<p>Entities are built and edited in the the Entity Editor. If you open a World in edit view, you can toggle between Edit View and Play View at any time.</p>
+			<p>Entities are built and edited in the the Entity Editor. If you open a Worlde in edit view, you can toggle between Edit View and Play View at any time. Worlde is a simple one page javascript driven web application.</p>
 			<p><img src="images/editorBlank.png" alt=""></p>
 			<p>Don't want to read any more documentation? Then just <a href="#get-started">get started!</a></p>
 			<h2 id="basic-information">Basic Information</h2>
 			<p>An Entity must have a <strong>Name</strong>. In most cases, an Entity has a <strong>Parent</strong> (it <em>belongs</em> to something, such as Object belongs to a Room, your possessions belong to you, etc.).  An Entity must be assigned an inital <strong>State</strong>, 0 is the default. <strong>Count</strong> is optional, and has many uses, and defaults to 0.  Finally, a set of set <strong>Properties</strong> can be set to change the Default Behavior of the Entity.</p>
 			<p><img src="images/entityBlank.png" alt=""></p>
 			<p><strong>Name</strong>. Must be unique, short (1-2 words recommended, and at least 2 chars), and ideally, lowercase for consistency. Examples: <em>silver sword, cluster of apples, wicker basket, house, rabid dog</em>, etc.  The Entity Name is how you will reference the entity from other entities.</p>
-			<p><strong>Parent</strong>. Ultimately, every entity needs to belong somewhere (or to someone).  Objects around you, including you as a player, are owned by a Room.  A possession of yours is owned by you.  As you move from Room to Room, you change your <em>Parent</em> to the new Room.  A Room can be unassigned or point to <strong>world</strong> as its Parent.  Things, Rooms, World, and <strong>me</strong> are all Entities. A parent relationship is not needed if the Entity is a Room or is not in play.</p>
+			<p><strong>Parent</strong>. Ultimately, every entity needs to belong somewhere (or to someone).  Objects around you, including you as a player, are owned by a Room.  A possession of yours is owned by you.  As you move from Room to Room, you change your <em>Parent</em> to the new Room.  A Room can be unassigned or point to <strong>Worlde</strong> as its Parent.  Things, Rooms, Worlde, and <strong>me</strong> are all Entities. A parent relationship is not needed if the Entity is a Room or is not in play.</p>
 			<p><strong>State</strong>. A State number is required. A State is used to describe the object as it is in the current moment. States are tracked as numbers starting at 0.</p>
 			<p><strong>Count</strong>. Count is a number that can be used for multiple purposes: to track internal state, strength, achievement or merit, or the quantity of an Entity. Integers are recommended, but decimals supported. A Players Count are displayed in the default Player View as <em>Points</em>.</p>
 			<p><strong>Properties</strong>. These are optional non-changing attributes that define the Default Behavior of the Entity:</p>
 			<pre><code>container
 			size
+				open | closed
 			notake
 			noput
 			strength
@@ -133,6 +145,8 @@
 			<p>By default, all Entities are size 1. However, to limit a container to fewer large objects, assign a size with a number to larger Entities: <em>size2, size15,</em> etc.</p>
 			<p>Sizes will be added up to not exceed the <em>container</em> limit.  Example: if a <em>basket</em> Entity is assigned <em>container10</em>.  It will fit 5 objects of default size1, 1 object of size4, but will no longer fit an additional Entity of size2.</p>
 			<p>Containers themselves must be given a fixed size. They will <em>keep this size regardless if they are empty or full</em>.  A <em>backpack</em> Entity can be a <em>container10,size5</em>, meaning it can hold 10 size points but only weighs you by size5. This makes sense in that a container can <em>help</em> you carry more!</p>
+			<h4 id="open--closed">open | closed</h4>
+			<p>By default, containers are <em>open</em>. Meaning: they are transparent, you can see, put in, and take from the container. If <em>closed</em> you can not see contents or take from or put into the container.  Also, if you are <em>in</em> a container, <em>open</em> allows you to see out (eg. if you are in a boat, a car, a telephone booth), <em>closed</em> does not (if you are in a box).  Use Behavior actions to change the property to either <em>open</em> or <em>closed</em>.</p>
 			<h4 id="notake">notake</h4>
 			<p>Some objects are not meant to be taken by default. This includes most <em>Beings</em> such as characters in your story, or massive objects such as <em>telephone booth,  metal vat, car</em>, etc.</p>
 			<h4 id="noput">noput</h4>
@@ -167,8 +181,8 @@
 			<p>First and foremost, Entities react to a user’s input. A condition first tries to match the users:  verb, noun (eg. object), and optionally: preposition, and indirect object.</p>
 			<p>You can put in a ‘bag of words’ to match several possible inputs. The following would match climb tree, climb fort, go fort, go tree, climb tree fort, etc. but in all cases would require ‘rope’ as your indirect object, eg. climb tree using rope, climb fort with rope, etc.</p>
 			<p>You can even leave the verb and/or noun empty as a ‘wildcard’. But beware, this means this Condition is likely to fire more frequently or at every turn.</p>
-			<h3 id="condition-statements--world-meta-commands">Condition Statements : World Meta Commands</h3>
-			<p>Now comes the fun part!  After the user input is matched, further optional Conditions are checked. World Meta Commands are simple logic statements, much like a simple programming language, which check the State, Parent, and Count of other Entities.</p>
+			<h3 id="condition-statements--worlde-meta-commands">Condition Statements : Worlde Meta Commands</h3>
+			<p>Now comes the fun part!  After the user input is matched, further optional Conditions are checked. Worlde Meta Commands are simple logic statements, much like a simple programming language, which check the State, Parent, and Count of other Entities.</p>
 			<p>Don’t be afraid, this is a very easy language to learn. Condition Statements are a series of ANDed logic statements in this form:</p>
 			<pre><code>{Entity Name} : {S|P|C}  {=|!|&lt;|&gt;}  {some value} , ...
 			</code></pre>
@@ -193,14 +207,14 @@
 			<p>The player is <em>always referred to as ‘me’</em> in Condition and Action statements.  Eg:</p>
 			<pre><code>me:P=room5,me:C+7,sword:P=me, ..
 			</code></pre>
-			<p>For advanced players: World actually allows the Player to play as any Entity.  By default, the Player plays as the ‘me’ Entity.  Regardless of which Entity you are playing, Conditions and Actions will always recognize ‘me’ as the current Player.  Always use ‘me’ in your Conditions and Actions when referring to ‘the Player’.</p>
+			<p>For advanced players: Worlde actually allows the Player to play as any Entity.  By default, the Player plays as the ‘me’ Entity.  Regardless of which Entity you are playing, Conditions and Actions will always recognize ‘me’ as the current Player.  Always use ‘me’ in your Conditions and Actions when referring to ‘the Player’.</p>
 			<h3 id="random-condition-command-r">Random Condition Command: R=</h3>
 			<p>You can make a Condition random by adding R={% probability, 0-99} anywhere on the Condition statement.</p>
 			<pre><code>me:P=haunted house,R=40
 			</code></pre>
 			<p>If you are in the haunted house, execute this action 40% of the time ...</p>
 			<h3 id="action-statements">Action Statements</h3>
-			<p>Once both the User Input Condition and Condition Statements are matched, it’s time for something to happen. Everything that ‘happens’ in the World is through one or more Entities changing: State, Parent, or Count. Each Action is followed by an optional message. Simple!</p>
+			<p>Once both the User Input Condition and Condition Statements are matched, it’s time for something to happen. Everything that ‘happens’ in the Worlde is through one or more Entities changing: State, Parent, or Count. Each Action is followed by an optional message. Simple!</p>
 			<p>And even more good news: Actions use almost the exact same syntax as Conditions!</p>
 			<pre><code>{Entity Name} : {S|P|C}  {=|+|-}  {some value} , ...
 			</code></pre>
@@ -215,11 +229,15 @@
 			<pre><code>jewel:P=me,me:C+25,me:P=magic carpet
 			</code></pre>
 			<p>Moves the jewel to me, awards me 25 points, moves me to the magic carpet.</p>
-			<h3 id="only-one-action-triggered-per-entity-per-turn">Only One Action Triggered Per Entity Per Turn</h3>
-			<p>Once an action executes (the User Input Conditions and Condition statements are met), the World will move on to the next Entity and check its actions, it will <em>not</em> continue to process conditions/actions on the same Entity.  This avoids many unexpected recursive and annoying behavior (trust us on this one!)</p>
-			<p>Also important: <em>once an Action fires, the World will no longer process actions from your Room or Default Actions</em>. This is so that Conditions from Entities in your World can override standard behavior.  This way, you can prevent a Player from ‘going’, ‘taking’, ‘putting’, etc. in the default way.</p>
-			<h3 id="special-action-commands-continue-autorun-parent-child">Special Action Commands: continue, autorun, PARENT!, CHILD!</h3>
-			<p><strong>continue</strong>. Use <em>continue</em> to execute Room Actions and Default Actions in addition to this Action.  Use ‘continue’ if you want to give the user a message (something humorous, perhaps) and still want all further Behaviors triggered as well.</p>
+			<h3 id="golden-rule-only-one-action-triggered-per-entity-per-turn">Golden Rule: Only One Action Triggered Per Entity Per Turn</h3>
+			<p>Once an action executes (the User Input Conditions and Condition statements are met), the Worlde will move on to the next Entity and check its actions, it will <em>not</em> continue to process conditions/actions on the same Entity.  This avoids many unexpected recursive and annoying behavior (trust us on this one!)</p>
+			<p>Also important: <em>once an Action fires, the Worlde will no longer process actions from your Room or Default Actions</em>. This is so that Conditions from Entities in your Worlde can override standard behavior.  This way, you can prevent a Player from ‘going’, ‘taking’, ‘putting’, etc. in the default way.</p>
+			<h3 id="special-action-commands-open-closed-continue-autorun-parent-child">Special Action Commands: open, closed, continue, autorun, PARENT!, CHILD!</h3>
+			<p><strong>open</strong> | <strong>closed</strong>. By default containers are <em>open</em>. You can set the default property to <em>closed</em> or toggle via an Action.  Closed does not allow you to see into (or out of) the container and not take from or put into the container.  To toggle behavior in an Action, use this command: <em>{Entity}:open</em> or <em>{Entity}:closed</em>.</p>
+			<pre><code>time machine:open		| time machine.closed
+			</code></pre>
+			<p>Normally, you will also want to change State when opening and closing (eg. State 1: &quot;a sealed metal vault&quot; v. State 2: &quot;an open vault&quot;).
+			<strong>continue</strong>. Use <em>continue</em> to execute Room Actions and Default Actions in addition to this Action.  Use ‘continue’ if you want to give the user a message (something humorous, perhaps) and still want all further Behaviors triggered as well.</p>
 			<p>Example: everytime you ‘go’ somewhere, you want to print a message ‘your feet ache’.  Normally, further ‘go’ Conditions will be ignored, but with ‘continue’, you ensure that Room and Default Conditions are executed.</p>
 			<pre><code>me:C-5,continue
 			</code></pre>
@@ -228,18 +246,28 @@
 			<pre><code>me:P=vampire room,autorun
 			</code></pre>
 			<p>As long as you are in the vampire room, the game will force a move each 5 seconds.</p>
-			<p><strong>PARENT!</strong> and <strong>CHILD!</strong> are some of the most advanced and powerful concepts in World.  You will want to first get experience in the basics first.  However, when ready, these functions will take your World to a new dimension.</p>
-			<p><strong>PARENT!</strong>. In certain advanced scenarios, you will want to set the Parent of an Entity to the <em>Parent</em> of another Entity.  For example, if the Player is being transported in a container (eg. a magic carpet, a car, a phone booth ..) and wants to 'get out' of the container at anytime, the Player needs to parent to the same Parent as their container.  Here you should use the special command <strong>me:P=PARENT!{my container}</strong>.  In other words: move an Entity (usually 'me') to the same Room as my Container.  If I am in <em>car</em> (me:P=car), and my car happens to be in <em>garage</em> (car:P=garage), by getting out of the car, I want to be moved to the Room of my car (me:P=Parent!car) which moves 'me' to <em>garage</em>.  You can also use PARENT! to make any other Entity magically appear in the same room as you, regardless of where you are: <em>genie:P=PARENT!me</em>.</p>
-			<p><strong>CHILD!</strong>. You can also assign an Entity to the <em>child</em> of a parent Entity.  Since an Entity can have many children, this assignment is <em>random</em>.  For example, you can have a troll randomly appear in one of many rooms in a cave.  You must first create a special parent Entity, in this case, for all the rooms in the cave (eg. <em>cave rooms</em>). Then, through an action you assign the troll randomly to one of the Rooms: <em>troll:P=CHILD!cave rooms</em>. One of the Rooms that look up to <em>cave rooms</em> will be choosen at random, creating a sense of agency and motion. By repeatidly calling this same action, the troll will move around the cave rooms at random. You can also move your character at random as if through a portal.  Assign certain 'portal' locations to a common Parent <em>portal rooms</em> and then, move your character at random to one of these locations: <em>me:P=CHILD!portal rooms</em>.</p>
+			<p><strong>PARENT!</strong> and <strong>CHILD!</strong> are some of the most advanced and powerful concepts in Worlde.  You will want to first get experience in the basics first.  However, when ready, these functions will take your Worlde to a new dimension.</p>
+			<p><strong>PARENT!</strong>. In certain advanced scenarios, you will want to set the Parent of an Entity to the <em>Parent</em> of another Entity.  For example, if the Player is being transported in a container (eg. a magic carpet, a car, a phone booth ..) and wants to 'get out' of the container at anytime, the Player needs to parent to the same Parent as their container.  Here you should use the special command <strong>me:P=PARENT!{my container}</strong>.</p>
+			<pre><code>me:P=PARENT!red car
+			</code></pre>
+			<p>In other words: move an Entity (usually 'me') to the same Room as my Container.  If I am in <em>red car</em> (me:P=red car), and my car happens to be in <em>garage</em> (red car:P=garage), by getting out of the car, I want to be moved to the Room of my car (<em>me:P=PARENT!red car</em>) which moves 'me' to <em>garage</em>.  You can also use PARENT! to make any other Entity magically appear in the same room as you, regardless of where you are:</p>
+			<pre><code>genie:P=PARENT!me
+			</code></pre>
+			<p><strong>CHILD!</strong>. You can also assign an Entity to the <em>child</em> of a parent Entity.  Since an Entity can have many children, this assignment is <em>random</em>.  For example, you can have a troll randomly appear in one of many rooms in a cave.  You must first create a special parent Entity, in this case, for all the rooms in the cave (eg. <em>cave rooms</em>). Then, through an action you assign the troll randomly to one of the Rooms:</p>
+			<pre><code>troll:P=CHILD!cave rooms
+			</code></pre>
+			<p>One of the Rooms that look up to <em>cave rooms</em> will be choosen at random, creating a sense of agency and motion. By repeatidly calling this same action, the troll will move around the cave rooms at random. You can also move your character at random as if through a portal.  Assign certain 'portal' locations to a common Parent <em>portal rooms</em> and then, move your character at random to one of these locations:</p>
+			<pre><code>me:P=CHILD!portal rooms
+			</code></pre>
 			<h3 id="behavior-examples">Behavior Examples</h3>
 			<p><img src="images/behaveSamp1.png" alt=""></p>
 			<p>IF the Player enters <em>open door with|using key</em> AND house is still in State 0 AND I have the key THEN change the house Entity to State 1 and show a message.</p>
 			<p><img src="images/behaveSamp2.png" alt=""></p>
 			<p>Battle behavior.  IF the Player enters <em>hit|kill|strike the rock monster</em> AND the monster is either State 0 or 1 THEN advance the monster up 1 State and take away 3 Points from me and show a message.</p>
 			<h2 id="default-behaviors">Default Behaviors</h2>
-			<p>World will interpret the following commands automatically if no other Entity in your Space gets to it first</p>
-			<pre><code>Take
-			Put
+			<p>Worlde will interpret the following commands automatically if no other Entity in your Space gets to it first</p>
+			<pre><code>Take, Take * from|out of *
+			Put, Put * in|into|on *
 			Look
 			Inventory
 			Brief
@@ -249,7 +277,7 @@
 			<p>However, if you don’t want the user to use these commands, simply put a Behavior in the Room or Object in the Player’s Space that reacts to ‘put’ or ‘get’ and the default behavior will not trigger.
 			Important Note: Entities in your Space override default Behavior</p>
 			<h2 id="user-input">User Input</h2>
-			<p>World accepts simple imperative phrases starting with a verb. To minimize unexpected behavior, World does not process compound sentences and will simply stop at the first <em>and</em>.  Accepted phrase types include:</p>
+			<p>Worlde accepts simple imperative phrases starting with a verb. To minimize unexpected behavior, Worlde does not process compound sentences and will simply stop at the first <em>and</em>.  Accepted phrase types include:</p>
 			<p>{verb} {noun} {prep} {obj}</p>
 			<pre><code>kill the green dragon with the golden sword
 			</code></pre>
@@ -275,9 +303,9 @@
 			<pre><code>inventory, look, run, yell
 			</code></pre>
 			<h3 id="word-length">Word Length</h3>
-			<p>World will process entered words at least 2 characters in length, it will not match single letters as words (these are too ambiguous).</p>
+			<p>Worlde will process entered words at least 2 characters in length, it will not match single letters as words (these are too ambiguous).</p>
 			<h3 id="synonyms---high-frequency-verbs">Synonyms - High Frequency Verbs</h3>
-			<p>World will map a variety of common verbs to ‘high frequency’ verbs for you automatically.  If a user enters ‘get’ World will also understand this as ‘take’. Use these Verbs in your Condition Statements.</p>
+			<p>Worlde will map a variety of common verbs to ‘high frequency’ verbs for you automatically.  If a user enters ‘get’ Worlde will also understand this as ‘take’. Use these Verbs in your Condition Statements.</p>
 			<p>In your Conditions, you can add multiple word combinations (eg. bag of words) but you don’t need to put ‘get’, ‘gather’, etc. each time, just use ‘take’.  Here are the preprogrammed high frequency verb mappings:</p>
 			<pre><code>take &lt;- get, grab, gather, collect
 			put &lt;- drop, lower
@@ -295,7 +323,7 @@
 			ask &lt;- question, inquire
 			yell &lt;- scream, shout
 			</code></pre>
-			<p>Note: World will not map Nouns or Objects to other words, it will simply do a 2 character (or more) match against your word list.</p>
+			<p>Note: Worlde will not map Nouns or Objects to other words, it will simply do a 2 character (or more) match against your word list.</p>
 			<h3 id="prepositions-and-direct-objects">Prepositions and Direct Objects</h3>
 			<p>If you specify a preposition and/or indirect object in the Behavior User Input fields, then the preposition and indirect object will be required by the player.  The following Condition:</p>
 			<p>will not pass if the user types:</p>
@@ -312,16 +340,16 @@
 			<h3 id="your-space">Your Space</h3>
 			<p>On any given turn, the Entities that matter are those in your Space.</p>
 			<p><img src="images/mySpace.png" alt=""></p>
-			<p>The red Entities make up your Space. These are the Entities that are in a Parent/Child relationship with you.  These Entities listen to and respond to your Actions. There may be hundreds of other rooms and objects in the World, however, only the Entities in your Space react to you in a given turn.</p>
+			<p>The red Entities make up your Space. These are the Entities that are in a Parent/Child relationship with you.  These Entities listen to and respond to your Actions. There may be hundreds of other rooms and objects in the Worlde, however, only the Entities in your Space react to you in a given turn.</p>
 			<p>Entities respond to User Commands in the following order:</p>
 			<pre><code>1. Me
 			2. Entities in your Room (Things in Room)
 			3. Entities in your possession (My Things)
 			4. Your Room
-			5. The World (above your Room)
+			5. The Worlde (above your Room)
 			6. and finally, Default Actions
 			</code></pre>
-			<p>World performs default actions for the following commands: take, put, look, inventory, brief, verbose.</p>
+			<p>Worlde performs default actions for the following commands: take, put, look, inventory, brief, verbose.</p>
 			<h2 id="tips">TIPS</h2>
 			<h3 id="tip--put-most-complex--specific-behavior-logic-first-general-behavior-later">TIP : Put most complex &amp; specific Behavior logic first, general Behavior later</h3>
 			<p>Even though you might only get the golden cup after many puzzles, put the ‘winning’ Behavior first, since it is the most specific (give cup ownership to me, IF cup State = 5 AND Room State = 3 AND My Points &gt; 30).</p>
